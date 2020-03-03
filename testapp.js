@@ -1,8 +1,6 @@
 var http = require('http')
 var url = require('url')
 
-http.createServer(onRequest).listen(443);
-console.log('Server has started');
 
 function onRequest(request, response){
   var pathName = url.parse(request.url).pathname
